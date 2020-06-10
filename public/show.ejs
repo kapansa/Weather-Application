@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather in <%= weather.name %></title>
+    <link href="css/show.css" rel="stylesheet">
+    <link rel="icon" href="images/icon.jpg">
+</head>
+<body class="show">
+    <h1>This is the Current weather in <span><%= weather.name %></span></h1>
+    <div class="weather">
+        <div class="weather-list">
+            <h2><%= weather.name %> (City in <span><%= weather.sys.country %></span>)</h2>
+            <p><span>Temperature</span>: <%= weather.main.temp %> ° C, <span>&nbsp;&nbsp;&nbsp;&nbsp;Pressure</span>: <%= weather.main.pressure %> hPa</p>
+            <p><span>Description</span>: <%= weather.weather[0].description %>, <span> &nbsp;&nbsp;&nbsp;&nbsp;Humidity</span>: <%= weather.main.humidity %> %</p>
+        </div>
+        <div class="weather-icon">
+            <img class="mb-4" src="<%= imageUrl %>" alt="Icon" width="72" height="72">
+        </div>
+    </div>
+    <a href="/"> <span>🡰</span> Go Back</a>
+</body>
+</html>

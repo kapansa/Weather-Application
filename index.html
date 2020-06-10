@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" href="images/icon.jpg">
+  </head>
+  <body class="text-center">
+
+    <form class="form-signin" method="POST" action="/weather">
+        <img class="mb-4 bg-image" src="images/Background.png" alt="" width="100" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Know the Weather of Your City.</h1>
+        <input name="cityName" type="text" class="form-control" placeholder="Your city name" required autofocus>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Know The Weather</button>
+        <p class="mt-5 mb-3 text-muted">&copy; Weather Application By Samuel Kapansa!</p>
+    </form>
+</body>
+</html>

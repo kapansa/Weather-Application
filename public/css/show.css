@@ -1,0 +1,43 @@
+/* show the weather */
+.show{
+    text-align: center;
+    padding-top: 170px;
+    padding-bottom: 40px;
+    background-color: #ece9e9;
+}
+.weather{
+    display: flex;
+    justify-content: center;
+    border: 3px solid white;
+    width: 730px;
+    margin: 0 auto 40px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 20px black;
+    background-color: #d4d1d1;
+}
+.weather-list{
+    margin-right: 70px;
+    text-align: left;
+}
+.weather-icon{
+    padding-top: 40px;
+}
+p{
+    font-size: 18px;
+}
+span{
+    color: #0069D9;
+}
+h1{
+    font-size: 3rem;
+}
+a{
+    color: #0069D9;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+a:hover{
+    color: #0069D9;
+    opacity: 0.7;
+}
